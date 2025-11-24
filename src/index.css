@@ -136,4 +136,51 @@ button {
 
 .errorPage__container h1 {
     font-size: 4rem;  
+} 
+
+
+
+/*================= NAVBAR ====================*/
+
+nav {
+    background: var(--color-primary);
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav__container * {
+    color: white;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__container div {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav__toggle-btn {
+    background: transparent;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.nav__container a:hover{
+    color: var(--color-primary-variant);
 }
