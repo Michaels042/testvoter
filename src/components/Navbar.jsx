@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(window.innerWidth < 600 ? false : true)
   const [darkTheme, setDarkTheme] = useState(localStorage.getItem
     ('voting-app-theme') || "")
 
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   // function to change toggle theme
   const changeThemeHandler = () => {
-    if(localStorage.getItem('voting-app-theme') == 'dark'){
+    if(localStorage.getItem('voting-app-theme') === 'dark'){
       localStorage.setItem('voting-app-theme', '')
     } else {
       localStorage.setItem('voting-app-theme', 'dark')
