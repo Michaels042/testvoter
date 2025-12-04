@@ -316,4 +316,8 @@ nav {
     .errorPage__container{
         width: 100%;
     }
+
+    .register__container {
+        padding: 3rem 1.5rem;
+    }
 }
