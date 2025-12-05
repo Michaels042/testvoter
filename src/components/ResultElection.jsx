@@ -8,7 +8,7 @@ const ResultElection = ({id, thumbnail, title}) => {
   
   // get candidates that belong to this election iteration
 const electionCandidates = candidates.filter(candidate => {
-    return candidate.election === id
+    return candidate.elections === id
 })
 
     return (

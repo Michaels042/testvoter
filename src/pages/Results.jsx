@@ -7,7 +7,7 @@ const Results = () => {
   const [elections, setElections] = useState(dummyElections)
   return (
    <section className="results">
-    <div className="conatiner results__container">
+    <div className="container results__container">
       {
         elections.map(election => <ResultElection key={election.id} {...election} />)
       }
