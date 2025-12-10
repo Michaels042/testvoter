@@ -512,8 +512,16 @@ nav {
     color: white;
 }
 
+/*================= CONGRATS ====================*/
 
-
+.congrats {
+    padding: 8rem 0;
+    height: 100vh;
+    text-align:center;
+}
+.congrats p {
+    margin: 0.5rem 0 1.2rem;
+}
 
 
 
@@ -564,5 +572,13 @@ nav {
     }
     .results {
         width: 100%;
+    }
+
+    .candidates__header {
+        width: var(--container-w-sm);
+    }
+    
+    .modal__content {
+        width: var(--container-w-sm);
     }
 }

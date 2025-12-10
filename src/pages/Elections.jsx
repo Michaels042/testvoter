@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { elections as dummyElections } from '../data'
+import Election from '../components/Election'
 
 const Elections = () => {
+  const [elections, setElections] = useState(dummyElections)
   return (
-    <div>Elections</div>
+    <section className="elections">
+      .container <div className="elections__container">
+        <header className="elections__header">
+          <h1>Ongoing Elections</h1>
+          <button className="btn primary">Create new Election</button>
+        </header>
+        <menu className="elections__menu">
+          {
+             elections.map(election => <Election key={election.id} {...election} />)
+          }
+        </menu>
+      </div>
+    </section>
   )
 }
 
