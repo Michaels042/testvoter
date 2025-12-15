@@ -729,4 +729,15 @@ nav {
     .election__image {
         height: 100%;
     }
+
+    .voters__table thead tr{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .voters__table tbody tr {
+        display: flex;
+        flex-direction: column;
+         width: 100%;
+    }
 }
