@@ -14,7 +14,7 @@
     {
         id: "e1",
         title: "Havard Presidential Elections 2024",
-        desciption: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
+        description: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
         thumbnail: Thumbnail1,
         candidates: ["c1", "c2", "c3", "c4"],
         voters: []
@@ -22,7 +22,7 @@
      {
         id: "e2",
         title: "Legon Presidential Elections 2024",
-        desciption: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
+        description: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
         thumbnail: Thumbnail2,
         candidates: ["c5", "c6", "c7"],
         voters: []
@@ -30,7 +30,7 @@
      {
         id: "e3",
         title: "Stanford Presidential Elections 2024",
-        desciption: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
+        description: "Vote for your favorite candidate in the Havard Presidential Elections 2024!",
         thumbnail: Thumbnail3,
         candidates: [],
         voters: []

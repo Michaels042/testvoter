@@ -523,6 +523,145 @@ nav {
     margin: 0.5rem 0 1.2rem;
 }
 
+/*================= ELECTIONS ====================*/
+
+.elections {
+    margin: 5rem 0;
+}
+
+.elections__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.elections__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.election {
+    display: grid;
+    grid-template-columns: 17rem auto;
+    align-items: center;
+    background: var(--color-gray-0);
+    border-radius: var(--radius-3);
+    overflow: hidden;
+    border: 0.5rem solid var(--color-gray-0);
+    transition: var(--transition);
+}
+
+.election__image{
+    max-height: 13rem;
+}
+
+.election:hover {
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+.election__info {
+    padding: 1rem 2rem;
+}
+.election__info h4 {
+    margin-bottom: 0.7rem;
+    color: var(--color-primary);
+}
+.election__cta {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*================= ELECTION DETAILS ====================*/
+.electionDetails {
+    margin:  5rem 0;
+}
+.electionDetails__image {
+    height: 15rem;
+    margin: 1.2rem 0 0.8rem;
+}
+.electionDetails__candidates {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3rem;
+    border-top: 2px solid var(--color-gray-200);
+}
+
+.electionCandidate {
+    background: var(--color-gray-0);
+    border-radius: var(--radius-4);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.electionCandidate__image {
+    height: 15rem;
+    overflow: hidden;
+}
+.electionCandidate h5 {
+    margin: 0.5rem 0 0.3rem;
+}
+.electionCandidate > div:nth-child(2) {
+    padding: 1.3rem;
+}
+
+.electionCandidate__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    background: var(--color-danger);
+    color: var(--color-gray-0);
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.6rem;
+    display: flex;
+}
+.electionCandidate__btn:hover {
+    background: var(--color-gray-900);
+}
+.add__candidate-btn {
+    background: var(--color-gray-100);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-4);
+    font-size: 5rem;
+    color: var(--color-primary);
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    display: grid;
+    place-items: center;
+    min-height: 15rem;
+}
+
+.voters {
+    margin: 6rem 0 3rem;
+}
+.voters h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.voters__table {
+    width: 100%;
+}
+.voters__table thead th {
+    text-align: left;
+    padding: 0.7rem 1.5rem;
+}
+.voters__table tbody td{
+    padding: 0.7rem 1.5rem;
+}
+.voters__table tbody tr:nth-child(odd) {
+    background: var(--color-gray-0);
+}
+
+
+
+
+
+
 
 
 
@@ -580,5 +719,14 @@ nav {
     
     .modal__content {
         width: var(--container-w-sm);
+    }
+    .election {
+        grid-template-columns: 1fr;
+    }
+    .election__info {
+        padding: 2rem 1rem;
+    }
+    .election__image {
+        height: 100%;
     }
 }
